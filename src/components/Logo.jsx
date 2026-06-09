@@ -8,14 +8,14 @@ const VARIANTS = {
 };
 
 const LOGO_SIZES = {
-  hero: { width: 132, height: 44 },
-  navbar: { width: 72, height: 30 },
-  footer: { width: 138, height: 46 },
-  login: { width: 144, height: 48 },
+  hero: { width: 132, height: 62 },
+  navbar: { width: 86, height: 38 },
+  footer: { width: 118, height: 56 },
+  login: { width: 122, height: 58 },
 };
 
 /**
- * Branded logo in a rounded frame — consistent sizing across the site.
+ * Branded logo in a circular frame — consistent sizing across the site.
  */
 function Logo({ variant = 'hero', className = '', alt = 'Aman Global Enterprises' }) {
   const size = LOGO_SIZES[variant] || LOGO_SIZES.hero;

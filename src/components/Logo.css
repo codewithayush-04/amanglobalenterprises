@@ -4,9 +4,11 @@
   justify-content: center;
   background: var(--color-white);
   border: 1px solid rgba(30, 90, 168, 0.1);
-  box-shadow: 0 2px 12px rgba(30, 90, 168, 0.08);
+  box-shadow: 0 2px 14px rgba(30, 90, 168, 0.1);
+  border-radius: 50%;
   overflow: hidden;
   line-height: 0;
+  flex-shrink: 0;
   transition: var(--transition);
 }
 
@@ -14,41 +16,41 @@
   display: block;
   width: auto;
   height: auto;
-  max-width: 100%;
   object-fit: contain;
   object-position: center;
 }
 
-/* Hero — compact brand mark above headline */
+/* Hero — circular brand mark */
 .logo-frame--hero {
-  width: fit-content;
-  max-width: min(156px, 44vw);
-  padding: 0.4rem 0.55rem;
-  border-radius: 12px;
-  margin-bottom: 0.375rem;
+  width: 168px;
+  height: 168px;
+  padding: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .logo-frame--hero .logo-frame__img {
-  height: 44px;
+  height: 62px;
   width: auto;
   max-width: 132px;
 }
 
-/* Navbar — fits nav bar height without crowding links */
+.logo-frame--hero:hover {
+  box-shadow: 0 6px 20px rgba(30, 90, 168, 0.14);
+}
+
+/* Navbar */
 .logo-frame--navbar {
-  width: fit-content;
-  max-width: 88px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  padding: 0.5rem;
   background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 1px 8px rgba(30, 90, 168, 0.08);
-  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(30, 90, 168, 0.1);
 }
 
 .logo-frame--navbar .logo-frame__img {
-  height: 30px;
+  height: 38px;
   width: auto;
-  max-width: 72px;
+  max-width: 86px;
 }
 
 .navbar--scrolled .logo-frame--navbar {
@@ -57,54 +59,54 @@
 
 /* Footer */
 .logo-frame--footer {
-  width: fit-content;
-  max-width: min(168px, 100%);
-  padding: 0.45rem 0.6rem;
-  border-radius: 12px;
+  width: 148px;
+  height: 148px;
+  padding: 0.95rem;
   margin-bottom: 0.75rem;
   border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.14);
 }
 
 .logo-frame--footer .logo-frame__img {
-  height: 46px;
+  height: 56px;
   width: auto;
-  max-width: 138px;
+  max-width: 118px;
 }
 
 /* Login */
 .logo-frame--login {
-  width: fit-content;
-  max-width: min(172px, 88%);
-  padding: 0.5rem 0.65rem;
-  border-radius: 12px;
+  width: 152px;
+  height: 152px;
+  padding: 1rem;
   margin: 0 auto 0.875rem;
 }
 
 .logo-frame--login .logo-frame__img {
-  height: 48px;
+  height: 58px;
   width: auto;
-  max-width: 144px;
+  max-width: 122px;
 }
 
 @media (max-width: 480px) {
   .logo-frame--hero {
-    max-width: min(140px, 52vw);
-    padding: 0.35rem 0.5rem;
+    width: 142px;
+    height: 142px;
+    padding: 0.95rem;
   }
 
   .logo-frame--hero .logo-frame__img {
-    height: 38px;
-    max-width: 114px;
+    height: 52px;
+    max-width: 112px;
   }
 
   .logo-frame--navbar {
-    max-width: 80px;
-    padding: 0.18rem 0.35rem;
+    width: 52px;
+    height: 52px;
+    padding: 0.42rem;
   }
 
   .logo-frame--navbar .logo-frame__img {
-    height: 28px;
-    max-width: 66px;
+    height: 34px;
+    max-width: 74px;
   }
 }
