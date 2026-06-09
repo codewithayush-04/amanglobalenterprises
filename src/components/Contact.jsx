@@ -1,6 +1,12 @@
 import { useState } from 'react';
-import { IconPhone, IconMail } from './icons';
+import { IconPhone, IconMail, IconWhatsApp } from './icons';
 import { saveInquiry } from '../utils/storage';
+import {
+  WHATSAPP_DISPLAY,
+  buildWhatsAppUrl,
+  buildInquiryWhatsAppMessage,
+  openWhatsApp,
+} from '../utils/whatsapp';
 import './Contact.css';
 
 /**
@@ -25,6 +31,22 @@ function Contact() {
     setSubmitted(true);
     setFormData({ name: '', email: '', message: '' });
     setTimeout(() => setSubmitted(false), 5000);
+  };
+
+  const handleWhatsAppSubmit = (e) => {
+    const form = e.currentTarget.closest('form');
+    if (!form?.checkValidity()) {
+      form?.reportValidity();
+      return;
+    }
+
+    openWhatsApp(
+      buildInquiryWhatsAppMessage({
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        message: formData.message.trim(),
+      }),
+    );
   };
 
   return (
@@ -62,6 +84,22 @@ function Contact() {
                   <a href="mailto:info@amanglobalenterprises.com">
                     info@amanglobalenterprises.com
                   </a>
+                </div>
+              </li>
+              <li>
+                <span className="contact__detail-icon contact__detail-icon--whatsapp" aria-hidden="true">
+                  <IconWhatsApp />
+                </span>
+                <div>
+                  <span className="contact__label">WhatsApp</span>
+                  <a
+                    href={buildWhatsAppUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {WHATSAPP_DISPLAY}
+                  </a>
+                  <p className="contact__whatsapp-hint">Message us directly on WhatsApp</p>
                 </div>
               </li>
             </ul>
@@ -114,9 +152,19 @@ function Contact() {
               />
             </div>
 
-            <button type="submit" className="btn btn--primary contact__submit">
-              Send Message
-            </button>
+            <div className="contact__actions">
+              <button type="submit" className="btn btn--primary contact__submit">
+                Save Inquiry
+              </button>
+              <button
+                type="button"
+                className="btn btn--whatsapp contact__submit"
+                onClick={handleWhatsAppSubmit}
+              >
+                <IconWhatsApp />
+                Send on WhatsApp
+              </button>
+            </div>
 
             {submitted && (
               <p className="contact__success" role="status">

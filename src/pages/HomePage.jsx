@@ -7,6 +7,7 @@ import Gallery from '../components/Gallery';
 import Features from '../components/Features';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 /**
  * Public landing page.
@@ -25,6 +26,7 @@ function HomePage() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

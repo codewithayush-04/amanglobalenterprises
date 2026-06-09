@@ -6,7 +6,9 @@ import {
   IconTwitter,
   IconInstagram,
   IconPhone,
+  IconWhatsApp,
 } from './icons';
+import { buildWhatsAppUrl, WHATSAPP_DISPLAY } from '../utils/whatsapp';
 import './Footer.css';
 
 const QUICK_LINKS = [
@@ -63,6 +65,15 @@ function Footer() {
           <a href="tel:+919296932642" className="footer__phone">
             <IconPhone />
             <span>9296932642</span>
+          </a>
+          <a
+            href={buildWhatsAppUrl()}
+            className="footer__whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconWhatsApp />
+            <span>WhatsApp: {WHATSAPP_DISPLAY}</span>
           </a>
           <a href="mailto:info@amanglobalenterprises.com" className="footer__email">
             info@amanglobalenterprises.com
