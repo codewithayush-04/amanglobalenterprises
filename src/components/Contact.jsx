@@ -50,7 +50,7 @@ function Contact() {
                 </span>
                 <div>
                   <span className="contact__label">Phone</span>
-                  <a href="tel:+917004370624">7004370624</a>
+                  <a href="tel:+919296932642">9296932642</a>
                 </div>
               </li>
               <li>

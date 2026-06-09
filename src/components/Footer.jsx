@@ -60,9 +60,9 @@ function Footer() {
 
         <div className="footer__contact">
           <h4 className="footer__heading">Contact</h4>
-          <a href="tel:+917004370624" className="footer__phone">
+          <a href="tel:+919296932642" className="footer__phone">
             <IconPhone />
-            <span>7004370624</span>
+            <span>9296932642</span>
           </a>
           <a href="mailto:info@amanglobalenterprises.com" className="footer__email">
             info@amanglobalenterprises.com
