@@ -3,6 +3,7 @@ import { IconPhone, IconMail, IconWhatsApp } from './icons';
 import { saveInquiry } from '../utils/storage';
 import {
   WHATSAPP_DISPLAY,
+  PHONE_TEL,
   buildWhatsAppUrl,
   buildInquiryWhatsAppMessage,
   openWhatsApp,
@@ -72,7 +73,7 @@ function Contact() {
                 </span>
                 <div>
                   <span className="contact__label">Phone</span>
-                  <a href="tel:+919296932642">9296932642</a>
+                  <a href={`tel:${PHONE_TEL}`}>{WHATSAPP_DISPLAY}</a>
                 </div>
               </li>
               <li>

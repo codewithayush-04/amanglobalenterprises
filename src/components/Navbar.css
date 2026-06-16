@@ -116,6 +116,16 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
+@media (max-width: 1100px) and (min-width: 769px) {
+  .navbar__list {
+    gap: 1rem;
+  }
+
+  .navbar__link {
+    font-size: 0.8125rem;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar__toggle {
     display: flex;

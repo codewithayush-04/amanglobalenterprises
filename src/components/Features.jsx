@@ -37,7 +37,7 @@ function Features() {
       <div className="container">
         <header className="section-header fade-in">
           <div className="section-divider" />
-          <h2 id="features-heading">Why Choose Us</h2>
+          <h2 id="features-heading">Why You Should Choose Us</h2>
           <p>Trusted partner for network, security, and IT excellence.</p>
         </header>
 

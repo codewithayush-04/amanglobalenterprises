@@ -4,10 +4,14 @@ import './Navbar.css';
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
+  { label: 'Vision', href: '#vision' },
   { label: 'Services', href: '#services' },
   { label: 'Products', href: '#products' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'About', href: '#about' },
+  { label: 'Why Us', href: '#why-choose-us' },
+  { label: 'Free Trial', href: '#free-trial' },
+  { label: 'Quotation', href: '#quotation' },
+  { label: 'FAQ', href: '#faq' },
+  { label: 'Policies', href: '#policies' },
   { label: 'Contact', href: '#contact' },
 ];
 

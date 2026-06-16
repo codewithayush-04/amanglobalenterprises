@@ -140,27 +140,6 @@
   width: 100%;
 }
 
-.btn--whatsapp {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background: #25d366;
-  color: var(--color-white);
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
-}
-
-.btn--whatsapp svg {
-  width: 20px;
-  height: 20px;
-}
-
-.btn--whatsapp:hover {
-  background: #1ebe57;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
-}
-
 .contact__success {
   margin-top: 1rem;
   padding: 0.875rem 1rem;

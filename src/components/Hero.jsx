@@ -54,8 +54,11 @@ function Hero() {
           <button type="button" className="btn btn--primary" onClick={() => scrollTo('#services')}>
             Explore Services
           </button>
-          <button type="button" className="btn btn--outline" onClick={() => scrollTo('#contact')}>
-            Contact Us
+          <button type="button" className="btn btn--outline" onClick={() => scrollTo('#free-trial')}>
+            Book Free Trial
+          </button>
+          <button type="button" className="btn btn--outline" onClick={() => scrollTo('#quotation')}>
+            Get Quotation
           </button>
         </div>
       </div>

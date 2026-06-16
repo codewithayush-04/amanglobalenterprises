@@ -8,15 +8,18 @@ import {
   IconPhone,
   IconWhatsApp,
 } from './icons';
-import { buildWhatsAppUrl, WHATSAPP_DISPLAY } from '../utils/whatsapp';
+import { buildWhatsAppUrl, WHATSAPP_DISPLAY, PHONE_TEL } from '../utils/whatsapp';
 import './Footer.css';
 
 const QUICK_LINKS = [
   { label: 'Home', href: '#home' },
+  { label: 'Company Vision', href: '#vision' },
   { label: 'Services', href: '#services' },
-  { label: 'Products', href: '#products' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'About', href: '#about' },
+  { label: 'Why Choose Us', href: '#why-choose-us' },
+  { label: 'Free Trial', href: '#free-trial' },
+  { label: 'Get Quotation', href: '#quotation' },
+  { label: 'FAQ', href: '#faq' },
+  { label: 'Policies', href: '#policies' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -62,7 +65,7 @@ function Footer() {
 
         <div className="footer__contact">
           <h4 className="footer__heading">Contact</h4>
-          <a href="tel:+919296932642" className="footer__phone">
+          <a href={`tel:${PHONE_TEL}`} className="footer__phone">
             <IconPhone />
             <span>9296932642</span>
           </a>

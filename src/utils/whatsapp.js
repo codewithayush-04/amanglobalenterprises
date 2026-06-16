@@ -8,6 +8,8 @@ export const WHATSAPP_NUMBER =
 export const WHATSAPP_DISPLAY =
   import.meta.env.VITE_WHATSAPP_DISPLAY || '9296932642';
 
+export const PHONE_TEL = `+${WHATSAPP_NUMBER}`;
+
 export const DEFAULT_WHATSAPP_MESSAGE =
   'Hello! I am interested in your network and security services from Aman Global Enterprises.';
 
