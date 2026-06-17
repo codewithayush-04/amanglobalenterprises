@@ -2,7 +2,7 @@
  * Eight major company policies — full document available as PDF download.
  */
 
-export const POLICY_PDF = '/aman-global-policies.pdf';
+export const POLICY_PDF = '/Aman Global Enterprises Policies.pdf';
 export const POLICY_PDF_NAME = 'Aman-Global-Enterprises-Policies.pdf';
 
 export const POLICIES = [
