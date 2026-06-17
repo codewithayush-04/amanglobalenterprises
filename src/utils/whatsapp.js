@@ -10,6 +10,9 @@ export const WHATSAPP_DISPLAY =
 
 export const PHONE_TEL = `+${WHATSAPP_NUMBER}`;
 
+export const COMPANY_EMAIL =
+  import.meta.env.VITE_COMPANY_EMAIL || 'amanglobalenterprises2025@gmail.com';
+
 export const DEFAULT_WHATSAPP_MESSAGE =
   'Hello! I am interested in your network and security services from Aman Global Enterprises.';
 

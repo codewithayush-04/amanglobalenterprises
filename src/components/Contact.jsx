@@ -4,6 +4,7 @@ import { saveInquiry } from '../utils/storage';
 import {
   WHATSAPP_DISPLAY,
   PHONE_TEL,
+  COMPANY_EMAIL,
   buildWhatsAppUrl,
   buildInquiryWhatsAppMessage,
   openWhatsApp,
@@ -82,8 +83,8 @@ function Contact() {
                 </span>
                 <div>
                   <span className="contact__label">Email</span>
-                  <a href="mailto:info@amanglobalenterprises.com">
-                    info@amanglobalenterprises.com
+                  <a href={`mailto:${COMPANY_EMAIL}`}>
+                    {COMPANY_EMAIL}
                   </a>
                 </div>
               </li>

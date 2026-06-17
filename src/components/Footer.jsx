@@ -8,7 +8,7 @@ import {
   IconPhone,
   IconWhatsApp,
 } from './icons';
-import { buildWhatsAppUrl, WHATSAPP_DISPLAY, PHONE_TEL } from '../utils/whatsapp';
+import { buildWhatsAppUrl, WHATSAPP_DISPLAY, PHONE_TEL, COMPANY_EMAIL } from '../utils/whatsapp';
 import './Footer.css';
 
 const QUICK_LINKS = [
@@ -78,8 +78,8 @@ function Footer() {
             <IconWhatsApp />
             <span>WhatsApp: {WHATSAPP_DISPLAY}</span>
           </a>
-          <a href="mailto:info@amanglobalenterprises.com" className="footer__email">
-            info@amanglobalenterprises.com
+          <a href={`mailto:${COMPANY_EMAIL}`} className="footer__email">
+            {COMPANY_EMAIL}
           </a>
         </div>
 
